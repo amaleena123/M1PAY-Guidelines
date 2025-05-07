@@ -1,38 +1,34 @@
-# Merchant Payment Setting Guidelines
+### Overview
+This guideline is designed to assist merchants in integrating with the M1Pay Payment Gateway, particularly in the sandbox environment.
 
-## Overview
-The initial guideline for merchant who needs to start payment integration with M1Pay especially in sandbox environment.
-
-## Table of Contents
+### Table of Contents
 1. [Introduction](#introduction)
-2. [Steps](#configuration-steps)  
-  
+2. [Steps](#steps)
 
-## Introduction
-The provided steps are to assist merchant to get the required information before start to develop the M1Pay Payment Gateway integration.
+### Introduction
+The following steps provide merchants with the necessary information to begin developing their M1Pay Payment Gateway integration.
 
-## Steps
-1. **Step 1**: Go to M1Pay Merchant Portal in Sandbox environment ( https://m1payall.com/merchant-portal ), you need to set the IP address, Web Redirect URL and Host to Host Callback URL by clicking on tab menu “Merchant” >  “View Merchant” and you will get this page:  
-  
-  ![Dashboard - Merchant](image.png)  
-  
+### Steps
+#### Step 1: Access the M1Pay Merchant Portal
+- Navigate to the M1Pay Merchant Portal in the sandbox environment: [https://m1payall.com/merchant-portal](https://m1payall.com/merchant-portal).
+- Set the **IP Address**, **Web Redirect URL**, and **Host to Host Callback URL** by selecting the **Merchant** tab and clicking **View Merchant**.  
+  ![Dashboard - Merchant](image.png)
 
-2. **Step 2**: After you click on the green box, it will display “update” and “security”:  
-  
+#### Step 2: Update and Security Options
+- Click the green box to reveal the **Update** and **Security** options.  
   ![Merchant - Update & Security](image-1.png)
-  
 
-3. **Step 3**: When click on “update”, it will appear the merchant setting and you may place the IP Address, Web Redirect URL and Host to Host Callback URL:  
-  
+#### Step 3: Update Merchant Settings
+- Select **Update** to access the merchant settings.
+- Enter the **IP Address**, **Web Redirect URL**, and **Host to Host Callback URL**.  
   ![Merchant - Update - Settings](image-2.png)
-  
-  
-4. **Step 4**: Get the Client ID and Client Secret. Refer in step #3, click on “security” and it should appear a page which contains of “Client ID” and “Client Secret”  as follows:  
-  
-  ![Merchant - Security - Client](image-3.png)  
-  
-  
-5. **Step 5**: Download the “Private Key” and place it on your server securely. This will be used on generating the “signedData” during initiate the transaction in M1Pay.  
-  
-  ![Merchant - Security - Key Files](image-4.png)  
-  
+
+#### Step 4: Retrieve Client ID and Client Secret
+- In the **Security** section (refer to Step 2), locate the **Client ID** and **Client Secret**.  
+  ![Merchant - Security - Client](image-3.png)
+
+#### Step 5: Download and Secure the Private Key
+- Download the **Private Key** and store it securely on your server.
+- This key is required to generate the `signedData` during transaction initiation with M1Pay.  
+  ![Merchant - Security - Key Files](image-4.png)
+
